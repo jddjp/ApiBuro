@@ -5,8 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Nancy.Json;
-//using ServiceReference1;//preproduccion
-using ServiceBuro;
+using ServiceReference1;//preproduccion
+//using ServiceBuro;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -214,19 +214,19 @@ namespace ApiBuro.Controllerspost
         }
         public List<CnsBcNombre>resultadoNombre(String numeroControlConsulta)
         {
-            var DataInfo = _context.CnsBcNombre.FromSqlRaw<CnsBcNombre>("select * from cnsBC_Nombre where NumeroControlConsulta=" + numeroControlConsulta + "").ToList();
+            var DataInfo = _context.CnsBcNombre.FromSqlRaw<CnsBcNombre>("select * from cnsBC_Nombre where NumeroControlConsulta='" + numeroControlConsulta + "'").ToList();
             _context.SaveChanges();
             return DataInfo;
         }
         public List<CnsBcResumenReporte> resultadoResumenReporte(String numeroControlConsulta)
         {
-            var DataInfo = _context.CnsBcResumenReporte.FromSqlRaw<CnsBcResumenReporte>("select * from cnsBC_ResumenReporte where NumeroControlConsulta=" + numeroControlConsulta + "").ToList();
+            var DataInfo = _context.CnsBcResumenReporte.FromSqlRaw<CnsBcResumenReporte>("select * from cnsBC_ResumenReporte where NumeroControlConsulta='" + numeroControlConsulta + "'").ToList();
             _context.SaveChanges();
             return DataInfo;
         }
         public List<CnsBcScoreBc> resultadoScoreBc(String numeroControlConsulta)
         {
-            var DataInfo = _context.CnsBcScoreBc.FromSqlRaw<CnsBcScoreBc>("select * from cnsBC_ScoreBC where NumeroControlConsulta=" + numeroControlConsulta + "").ToList();
+            var DataInfo = _context.CnsBcScoreBc.FromSqlRaw<CnsBcScoreBc>("select * from cnsBC_ScoreBC where NumeroControlConsulta='" + numeroControlConsulta + "'").ToList();
             _context.SaveChanges();
             return DataInfo;
         }
