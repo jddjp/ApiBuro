@@ -626,6 +626,10 @@ namespace ApiBuro.Models
                 entity.Property(e => e.Sufijo)
                     .HasMaxLength(4)
                     .IsUnicode(false);
+
+                entity.Property(e => e.FechaRegistro)
+                  .HasMaxLength(25)
+                  .IsUnicode(false);
             });
 
             modelBuilder.Entity<CnsBcResumenReporte>(entity =>

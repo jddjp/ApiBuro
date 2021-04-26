@@ -8,11 +8,11 @@ namespace ApiBuro.Models
    
         public class CnsInfoBuro
     {
-        public List<CnsBcNombre> CnsBcNombre { get; set; }
+        public CnsBcNombre CnsBcNombre { get; set; }
         public List<CuentaSP> CnsBcCuenta { get; set; }
         public List<CnsBcScoreBc> CnsBcScoreBc { get; set; }
         public List<CnsBcResumenReporte> CnsBcResumenReporte { get; set; }
-        public DateTime FechaRegistro { get; set; }
+       
         //public List<CnsBcEncabezado> CnsBcEncabezado { get; set; }
 
 

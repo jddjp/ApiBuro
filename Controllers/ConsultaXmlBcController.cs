@@ -39,9 +39,9 @@ namespace ApiBuro.Controllerspost
         };
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CnsBcNombre>>> GetNombres()
+        public async Task<ActionResult<IEnumerable<CnsBcHawkAlertC>>> GetNombres()
         {
-            return await _context.CnsBcNombre.ToListAsync();
+            return await _context.CnsBcHawkAlertC.ToListAsync();
         }
 
 
@@ -215,7 +215,10 @@ namespace ApiBuro.Controllerspost
         }
         public List<CnsBcNombre>resultadoNombre(String numeroControlConsulta)
         {
-            var DataInfo = _context.CnsBcNombre.FromSqlRaw<CnsBcNombre>("select * from cnsBC_Nombre where NumeroControlConsulta='" + numeroControlConsulta + "'").ToList();
+            //var DataInfo = _context.CnsBcNombre.FromSqlRaw<CnsBcNombre>("select * from cnsBC_Nombre where NumeroControlConsulta='" + numeroControlConsulta + "'").ToList();
+            var DatoFiltro = new SqlParameter("@numeroControlConsulta", numeroControlConsulta);
+            var DataInfo = _context.CnsBcNombre.FromSqlRaw<CnsBcNombre>("EXEC ExtraeNombreconFecha @numeroControlConsulta", DatoFiltro).ToList();
+
             _context.SaveChanges();
             return DataInfo;
         }
@@ -254,7 +257,8 @@ namespace ApiBuro.Controllerspost
          var respuesta = new CnsInfoBuro();
             if (Nombres == true)
             { 
-                respuesta.CnsBcNombre=resultadoNombre(numeroControlConsulta);
+                respuesta.CnsBcNombre=resultadoNombre(numeroControlConsulta).FirstOrDefault();
+                respuesta.CnsBcNombre.FechaRegistro =resultadoEncabezado(numeroControlConsulta).FirstOrDefault().Fecha;
             }
             if (Cuentas == true)
             {
@@ -270,7 +274,7 @@ namespace ApiBuro.Controllerspost
             }
 
 
-            respuesta.FechaRegistro = resultadoEncabezado(numeroControlConsulta).FirstOrDefault().Fecha;
+        
             return respuesta;
         }
 

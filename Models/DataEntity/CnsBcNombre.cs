@@ -31,6 +31,7 @@ namespace ApiBuro.Models
         public string? EdadesDependientes { get; set; }
         public string? FechaRecepcionInformacionDependientes { get; set; }
         public string? FechaDefuncion { get; set; }
+        public DateTime? FechaRegistro { get; set; }
 
     }
 }
