@@ -37,6 +37,7 @@ namespace ApiBuro.Controllerspost
             EjercidoCreditoHipotecario = ""
 
         };
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CnsBcNombre>>> GetNombres()
         {
@@ -230,6 +231,14 @@ namespace ApiBuro.Controllerspost
             _context.SaveChanges();
             return DataInfo;
         }
+
+        public List<CnsBcEncabezado> resultadoEncabezado(String numeroControlConsulta) 
+        {
+            var DataInfo = _context.CnsBcEncabezado.FromSqlRaw<CnsBcEncabezado>("select * from cnsBC_Encabezado where NumeroControlConsulta='" + numeroControlConsulta + "'").ToList();
+            _context.SaveChanges();
+            return DataInfo;
+        }
+
         //public List<EncabezadoConsultaBC> DatosEncabezado(int? AmbienteCionsultar)
         //{
         //    var Ambiente = new SqlParameter("@ambiente",AmbienteCionsultar);
@@ -259,7 +268,9 @@ namespace ApiBuro.Controllerspost
             {
                respuesta.CnsBcResumenReporte = resultadoResumenReporte(numeroControlConsulta);
             }
-           
+
+
+            respuesta.FechaRegistro = resultadoEncabezado(numeroControlConsulta).FirstOrDefault().Fecha;
             return respuesta;
         }
 

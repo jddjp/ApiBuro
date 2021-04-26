@@ -13,5 +13,6 @@ namespace ApiBuro.Models
         public string ClaveRetornoConsumidorPrincipal { get; set; }
         public string ClaveRetornoConsumidorSecundario { get; set; }
         public string NumeroControlConsulta { get; set; }
+        public DateTime Fecha { get; set; }
     }
 }

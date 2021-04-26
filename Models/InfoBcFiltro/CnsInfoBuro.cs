@@ -12,10 +12,14 @@ namespace ApiBuro.Models
         public List<CuentaSP> CnsBcCuenta { get; set; }
         public List<CnsBcScoreBc> CnsBcScoreBc { get; set; }
         public List<CnsBcResumenReporte> CnsBcResumenReporte { get; set; }
+        public DateTime FechaRegistro { get; set; }
+        //public List<CnsBcEncabezado> CnsBcEncabezado { get; set; }
 
-     
+
+
     }
 
 
     
 }
+
