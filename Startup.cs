@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 
 namespace ApiBuro
 {
@@ -27,6 +28,19 @@ namespace ApiBuro
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Swagger Config Jose Daniel de Jesus Perez
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("AppAdministration", new OpenApiInfo()
+                {
+                    Title = "Api ConsultaSic Produccion ",
+                    Version = "V1"
+                });
+
+
+            });
+            //Swagger Config
+
             //Conexion bd por appsetings
             services.AddDbContext<ApiBuro.Models.ApiSICContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Apprecia_Dev")));
             services.AddControllers();
@@ -48,6 +62,18 @@ namespace ApiBuro
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            //SWAGGER
+            app.UseStaticFiles();
+            app.UseSwagger();
+
+
+            app.UseSwaggerUI(c =>
+            {  
+                c.SwaggerEndpoint("AppAdministration/swagger.json", "Api ConsultaSic Produccion");
+            });
+
+            //SWAGGER
 
             app.UseHttpsRedirection();
 

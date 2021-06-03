@@ -5,8 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Nancy.Json;
-using ServiceReference1;//preproduccion
-//using ServiceBuro;
+//using ServiceReference1;//preproduccion
+using ServiceBuro;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -123,6 +123,7 @@ namespace ApiBuro.Controllerspost
                     Persona = personaunicaconsultar,
                 };
 
+            
                 ConsultaBC CBC = new ConsultaBC
                 {
                     Personas = personaconsulta
@@ -257,8 +258,9 @@ namespace ApiBuro.Controllerspost
          var respuesta = new CnsInfoBuro();
             if (Nombres == true)
             { 
-                respuesta.CnsBcNombre=resultadoNombre(numeroControlConsulta).FirstOrDefault();
-                respuesta.CnsBcNombre.FechaRegistro =resultadoEncabezado(numeroControlConsulta).FirstOrDefault().Fecha;
+                respuesta.CnsBcNombre = resultadoNombre(numeroControlConsulta);
+
+               
             }
             if (Cuentas == true)
             {
