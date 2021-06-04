@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,11 +32,26 @@ namespace ApiBuro
         {
             //Swagger Config Jose Daniel de Jesus Perez
             services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("AppAdministration", new OpenApiInfo()
+            {      // Set the comments path for the Swagger JSON and UI.
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
+
+                c.SwaggerDoc("AppAdministrationApi", new OpenApiInfo()
                 {
-                    Title = "Api ConsultaSic Produccion ",
-                    Version = "V1"
+                    Title = "Api ConsultaSIC Producción ",
+                    Version = "V1",
+                    Description="La Documentacion de esta Api permite comprender la forma correcta de realizar la peticion para consulta a Buro de Credito y probar los metodos disponibles para consumo",
+                   
+                    Contact= new OpenApiContact
+                    { 
+                        Name="Jose Daniel De Jesus Perez" ,
+                        Email="jose.dejesus@fomepade.com.mx"
+                    
+                    }
+                    
+                  
+
                 });
 
 
@@ -70,7 +87,7 @@ namespace ApiBuro
 
             app.UseSwaggerUI(c =>
             {  
-                c.SwaggerEndpoint("AppAdministration/swagger.json", "Api ConsultaSic Produccion");
+                c.SwaggerEndpoint("AppAdministrationApi/swagger.json", "Api ConsultaSIC Producción");
             });
 
             //SWAGGER

@@ -9,6 +9,7 @@ using ApiBuro.Models;
 
 namespace ApiBuro.Controllers
 {
+    [ApiExplorerSettings(IgnoreApi = true)]
     [Route("api/[controller]")]
     [ApiController]
     public class CnsBcResumenReportesController : ControllerBase

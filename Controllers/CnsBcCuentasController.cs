@@ -9,8 +9,9 @@ using ApiBuro.Models;
 
 namespace ApiBuro.Controllers
 {
-    [Route("api/[controller]")]
+    [ApiExplorerSettings(IgnoreApi = true)]
     [ApiController]
+    [Route("api/[controller]")]
     public class CnsBcCuentasController : ControllerBase
     {
         private readonly ApiSICContext _context;

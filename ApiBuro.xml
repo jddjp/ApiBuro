@@ -1,0 +1,2702 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiBuro</name>
+    </assembly>
+    <members>
+        <member name="T:ServiceBuro.consulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.consulta.Encabezado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.consulta.Personas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.consulta.Caracteristicas">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.Encabezado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Encabezado.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Encabezado.NombreUsuario">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Encabezado.Password">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.ScoreBuroCreditoRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ScoreBuroCreditoRespBC.nombreScore">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ScoreBuroCreditoRespBC.CodigoScore">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ScoreBuroCreditoRespBC.ValorScore">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ScoreBuroCreditoRespBC.CodigoRazon">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ScoreBuroCreditoRespBC.CodigoError">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.DeclaracionesClienteRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.DeclaracionesClienteRespBC.DeclaracionConsumidor">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.HawkAlertBDRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.HawkAlertBDRespBC.FechaReporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.HawkAlertBDRespBC.CodigoClave">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.HawkAlertBDRespBC.TipoInstitucion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.HawkAlertBDRespBC.Mensaje">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.HawkAlertConsultaRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.HawkAlertConsultaRespBC.FechaReporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.HawkAlertConsultaRespBC.CodigoClave">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.HawkAlertConsultaRespBC.TipoInstitucion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.HawkAlertConsultaRespBC.Mensaje">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.ResumenReporteRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.FechaIngresoBD">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroMOP7">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroMOP6">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroMOP5">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroMOP4">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroMOP3">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroMOP2">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroMOP1">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroMOP0">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroMOPUR">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroCuentas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.CuentasPagosFijosHipotecas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.CuentasRevolventesAbiertas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.CuentasCerradas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.CuentasNegativasActuales">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.CuentasClavesHistoriaNegativa">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.CuentasDisputa">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroSolicitudesUltimos6Meses">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NuevaDireccionReportadaUltimos60Dias">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.MensajesAlerta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.ExistenciaDeclaracionesConsumidor">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.TipoMoneda">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.TotalCreditosMaximosRevolventes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.TotalLimitesCreditoRevolventes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.TotalSaldosActualesRevolventes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.TotalSaldosVencidosRevolventes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.TotalPagosRevolventes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.PctLimiteCreditoUtilizadoRevolventes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.TotalCreditosMaximosPagosFijos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.TotalSaldosActualesPagosFijos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.TotalSaldosVencidosPagosFijos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.TotalPagosPagosFijos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroMOP96">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroMOP97">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroMOP99">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.FechaAperturaCuentaMasAntigua">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.FechaAperturaCuentaMasReciente">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.TotalSolicitudesReporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.FechaSolicitudReporteMasReciente">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroTotalCuentasDespachoCobranza">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.FechaAperturaCuentaMasRecienteDespachoCobranza">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.NumeroTotalSolicitudesDespachosCobranza">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ResumenReporteRespBC.FechaSolicitudMasRecienteDespachoCobranza">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.ConsultaEfectuadaRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaRespBC.FechaConsulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaRespBC.IdentificacionBuro">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaRespBC.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaRespBC.NombreOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaRespBC.TelefonoOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaRespBC.TipoContrato">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaRespBC.ClaveUnidadMonetaria">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaRespBC.ImporteContrato">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaRespBC.IndicadorTipoResponsabilidad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaRespBC.ConsumidorNuevo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaRespBC.ResultadoFinal">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaRespBC.IdentificadorOrigenConsulta">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.CuentasRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FechaActualizacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.RegistroImpugnado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.NombreOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.NumeroTelefonoOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.IdentificadorSociedadInformacionCrediticia">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.NumeroCuentaActual">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.IndicadorTipoResponsabilidad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.TipoCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.TipoContrato">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.ClaveUnidadMonetaria">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.ValorActivoValuacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.NumeroPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FrecuenciaPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.MontoPagar">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FechaAperturaCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FechaUltimoPago">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FechaUltimaCompra">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FechaCierreCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FechaReporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.ModoReportar">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.UltimaFechaSaldoCero">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.Garantia">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.CreditoMaximo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.SaldoActual">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.LimiteCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.SaldoVencido">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.NumeroPagosVencidos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FormaPagoActual">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.HistoricoPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FechaMasRecienteHistoricoPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FechaMasAntiguaHistoricoPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.ClaveObservacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.TotalPagosReportados">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.TotalPagosCalificadosMOP2">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.TotalPagosCalificadosMOP3">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.TotalPagosCalificadosMOP4">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.TotalPagosCalificadosMOP5">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.ImporteSaldoMorosidadHistMasGrave">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FechaHistoricaMorosidadMasGrave">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.MopHistoricoMorosidadMasGrave">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FechaInicioReestructura">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.MontoUltimoPago">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.IdentificadorCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.IdentificadorCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FechaAperturaCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FechaCancelacionCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.HistoricoCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FechaMasRecienteHistoricoCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentasRespBC.FechaMasAntiguaHistoricoCAN">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.PersonaRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.Encabezado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.Nombre">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.Domicilios">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.Empleos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.Cuentas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.ConsultasEfectuadas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.ResumenReporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.HawkAlertConsulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.HawkAlertBD">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.DeclaracionesCliente">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.ScoreBuroCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.Error">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.ReporteImpreso">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.Caracteristicas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.ReportePDF">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaRespBC.FR">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.EncabezadoRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoRespBC.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoRespBC.ClaveRetornoConsumidorPrincipal">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoRespBC.ClaveRetornoConsumidorSecundario">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoRespBC.NumeroControlConsulta">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.EncabezadoBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoBC.Version">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoBC.NumeroReferenciaOperador">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoBC.ProductoRequerido">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoBC.ClavePais">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoBC.IdentificadorBuro">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoBC.ClaveUsuario">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoBC.Password">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoBC.TipoConsulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoBC.TipoContrato">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoBC.ClaveUnidadMonetaria">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoBC.ImporteContrato">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoBC.Idioma">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoBC.TipoSalida">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.NombreRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreRespBC.FechaRecepcionInformacionDependientes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreRespBC.FechaDefuncion">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.NombreBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.ApellidoPaterno">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.ApellidoMaterno">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.ApellidoAdicional">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.PrimerNombre">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.SegundoNombre">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.FechaNacimiento">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.RFC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.Prefijo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.Sufijo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.Nacionalidad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.Residencia">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.NumeroLicenciaConducir">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.EstadoCivil">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.Sexo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.NumeroCedulaProfesional">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.NumeroRegistroElectoral">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.ClaveImpuestosOtroPais">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.ClaveOtroPais">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.NumeroDependientes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreBC.EdadesDependientes">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.DireccionRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.DireccionRespBC.FechaReporteDireccion">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.Direccion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Direccion.Direccion1">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Direccion.Direccion2">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Direccion.ColoniaPoblacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Direccion.DelegacionMunicipio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Direccion.Ciudad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Direccion.Estado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Direccion.CP">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Direccion.FechaResidencia">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Direccion.NumeroTelefono">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Direccion.Extension">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Direccion.Fax">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Direccion.TipoDomicilio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Direccion.IndicadorEspecialDomicilio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Direccion.CodPais">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.EmpleoRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoRespBC.FechaReportoEmpleo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoRespBC.FechaVerificacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoRespBC.ModoVerificacion">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.EmpleoBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.NombreEmpresa">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.Direccion1">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.Direccion2">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.ColoniaPoblacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.DelegacionMunicipio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.Ciudad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.Estado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.CP">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.NumeroTelefono">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.Extension">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.Fax">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.Cargo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.FechaContratacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.ClaveMonedaSalario">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.Salario">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.BaseSalarial">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.NumeroEmpleado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.FechaUltimoDiaEmpleo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoBC.CodPais">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.ErrorRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ErrorRespBC.AR">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ErrorRespBC.UR">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.AR">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.AR.ReferenciaOperador">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.AR.SujetoNoAutenticado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.AR.ClaveOPasswordErroneo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.AR.ErrorSistemaBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.AR.EtiquetaSegmentoErronea">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.AR.FaltaCampoRequerido">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.AR.ErrorReporteBloqueado">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.UR">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.UR.NumeroReferenciaOperador">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.UR.SolicitudClienteErronea">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.UR.VersionProporcionadaErronea">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.UR.ProductoSolicitadoErroneo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.UR.PasswordOClaveErronea">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.UR.SegmentoRequeridoNoProporcionado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.UR.UltimaInformacionValidaCliente">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.UR.InformacionErroneaParaConsulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.UR.ValorErroneoCampoRelacionado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.UR.ErrorSistemaBuroCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.UR.EtiquetaSegmentoErronea">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.UR.OrdenErroneoSegmento">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.UR.NumeroErroneoSegmentos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.UR.FaltaCampoRequerido">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.UR.ErrorReporteBloqueado">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.CaracteristicasBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CaracteristicasBC.Plantilla">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CaracteristicasBC.IdCaracteristica">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CaracteristicasBC.NumeroCaracteristica">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CaracteristicasBC.Valor">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CaracteristicasBC.CodigoError">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.ReportePDF">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ReportePDF.Reporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ReportePDF.Error">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.FR">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.FR.LeyendaReporteBloqueado">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.RespuestaBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.RespuestaBC.Personas">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.AutenticacionBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.AutenticacionBC.TipoReporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.AutenticacionBC.TipoSalidaAU">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.AutenticacionBC.ReferenciaOperador">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.AutenticacionBC.TarjetaCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.AutenticacionBC.UltimosCuatroDigitos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.AutenticacionBC.EjercidoCreditoHipotecario">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.AutenticacionBC.EjercidoCreditoAutomotriz">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.CuentaClienteBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaClienteBC.NumeroCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaClienteBC.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaClienteBC.NombreOtorgante">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.PersonaBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaBC.Encabezado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaBC.Nombre">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaBC.Domicilios">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaBC.Empleos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaBC.CuentaC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaBC.Autentica">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaBC.Caracteristicas">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.Caracteristicas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Caracteristicas.Plantilla">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.PersonasBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonasBC.Persona">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.ConsultaBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaBC.Personas">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.ConsultaEfectuadaResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaResp.FechaConsulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaResp.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaResp.NombreOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaResp.TipoCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaResp.ClaveUnidadMonetaria">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaResp.ImporteCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ConsultaEfectuadaResp.TipoResponsabilidad">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.CuentaResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.FechaActualizacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.RegistroImpugnado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.NombreOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.CuentaActual">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.TipoResponsabilidad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.TipoCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.TipoCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.ClaveUnidadMonetaria">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.ValorActivoValuacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.NumeroPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.FrecuenciaPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.MontoPagar">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.FechaAperturaCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.FechaUltimoPago">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.FechaUltimaCompra">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.FechaCierreCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.FechaReporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.UltimaFechaSaldoCero">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.Garantia">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.CreditoMaximo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.SaldoActual">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.LimiteCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.SaldoVencido">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.NumeroPagosVencidos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.PagoActual">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.HistoricoPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.FechaRecienteHistoricoPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.FechaAntiguaHistoricoPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.ClavePrevencion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.TotalPagosReportados">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.PeorAtraso">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.FechaPeorAtraso">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.SaldoVencidoPeorAtraso">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.MontoUltimoPago">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.IdentificadorCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.IdentificadorCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.FechaAperturaCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.FechaCancelacionCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.HistoricoCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.FechaMasRecienteHistoricoCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.CuentaResp.FechaMasAntiguaHistoricoCAN">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.MensajeResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.MensajeResp.TipoMensaje">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.MensajeResp.Leyenda">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.EncabezadoResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoResp.Version">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoResp.FolioConsultaOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoResp.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoResp.ExpedienteEncontrado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EncabezadoResp.FolioConsulta">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.PersonaResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaResp.Encabezado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaResp.Nombre">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaResp.Domicilios">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaResp.Empleos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaResp.Mensajes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaResp.Cuentas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaResp.ConsultasEfectuadas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaResp.DeclaracionesConsumidor">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaResp.Caracteristicas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaResp.ReportePDF">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.PersonaResp.FR">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.NombreResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.NombreResp.FechaDefuncion">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.Nombre">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Nombre.ApellidoPaterno">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Nombre.ApellidoMaterno">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Nombre.ApellidoAdicional">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Nombre.Nombres">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Nombre.FechaNacimiento">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Nombre.RFC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Nombre.CURP">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Nombre.Nacionalidad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Nombre.Residencia">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Nombre.EstadoCivil">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Nombre.Sexo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Nombre.ClaveElectorIFE">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Nombre.NumeroDependientes">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.DomicilioResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.DomicilioResp.FechaRegistroDomicilio">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.Domicilio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Domicilio.Direccion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Domicilio.ColoniaPoblacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Domicilio.DelegacionMunicipio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Domicilio.Ciudad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Domicilio.Estado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Domicilio.CP">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Domicilio.FechaResidencia">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Domicilio.NumeroTelefono">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Domicilio.TipoDomicilio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Domicilio.TipoAsentamiento">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Domicilio.CodPais">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.EmpleoResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.EmpleoResp.FechaVerificacionEmpleo">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.Empleo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.NombreEmpresa">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.Direccion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.ColoniaPoblacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.DelegacionMunicipio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.Ciudad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.Estado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.CP">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.NumeroTelefono">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.Extension">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.Fax">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.Puesto">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.FechaContratacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.ClaveMoneda">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.SalarioMensual">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.FechaUltimoDiaEmpleo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Empleo.CodPais">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.ErrorResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ErrorResp.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ErrorResp.FolioConsultaOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ErrorResp.ProductoRequerido">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ErrorResp.Errores">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ErrorResp.AR">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.ErrorResp.UR">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.respuesta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.respuesta.Error">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.respuesta.Personas">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.DetalleConsulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.DetalleConsulta.FolioConsultaOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.DetalleConsulta.ProductoRequerido">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.DetalleConsulta.TipoCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.DetalleConsulta.ClaveUnidadMonetaria">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.DetalleConsulta.ImporteContrato">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.DetalleConsulta.NumeroFirma">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.persona">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.persona.DetalleConsulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.persona.Nombre">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.persona.Domicilios">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.persona.Empleos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.persona.CuentasReferencia">
+            <remarks/>
+        </member>
+        <member name="T:ServiceBuro.Personas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceBuro.Personas.Persona">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.consulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.consulta.Encabezado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.consulta.Personas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.consulta.Caracteristicas">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.Encabezado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Encabezado.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Encabezado.NombreUsuario">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Encabezado.Password">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.ScoreBuroCreditoRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ScoreBuroCreditoRespBC.nombreScore">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ScoreBuroCreditoRespBC.CodigoScore">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ScoreBuroCreditoRespBC.ValorScore">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ScoreBuroCreditoRespBC.CodigoRazon">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ScoreBuroCreditoRespBC.CodigoError">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.DeclaracionesClienteRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.DeclaracionesClienteRespBC.DeclaracionConsumidor">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.HawkAlertBDRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.HawkAlertBDRespBC.FechaReporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.HawkAlertBDRespBC.CodigoClave">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.HawkAlertBDRespBC.TipoInstitucion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.HawkAlertBDRespBC.Mensaje">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.HawkAlertConsultaRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.HawkAlertConsultaRespBC.FechaReporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.HawkAlertConsultaRespBC.CodigoClave">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.HawkAlertConsultaRespBC.TipoInstitucion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.HawkAlertConsultaRespBC.Mensaje">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.ResumenReporteRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.FechaIngresoBD">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroMOP7">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroMOP6">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroMOP5">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroMOP4">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroMOP3">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroMOP2">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroMOP1">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroMOP0">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroMOPUR">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroCuentas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.CuentasPagosFijosHipotecas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.CuentasRevolventesAbiertas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.CuentasCerradas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.CuentasNegativasActuales">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.CuentasClavesHistoriaNegativa">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.CuentasDisputa">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroSolicitudesUltimos6Meses">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NuevaDireccionReportadaUltimos60Dias">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.MensajesAlerta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.ExistenciaDeclaracionesConsumidor">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.TipoMoneda">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.TotalCreditosMaximosRevolventes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.TotalLimitesCreditoRevolventes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.TotalSaldosActualesRevolventes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.TotalSaldosVencidosRevolventes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.TotalPagosRevolventes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.PctLimiteCreditoUtilizadoRevolventes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.TotalCreditosMaximosPagosFijos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.TotalSaldosActualesPagosFijos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.TotalSaldosVencidosPagosFijos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.TotalPagosPagosFijos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroMOP96">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroMOP97">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroMOP99">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.FechaAperturaCuentaMasAntigua">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.FechaAperturaCuentaMasReciente">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.TotalSolicitudesReporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.FechaSolicitudReporteMasReciente">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroTotalCuentasDespachoCobranza">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.FechaAperturaCuentaMasRecienteDespachoCobranza">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.NumeroTotalSolicitudesDespachosCobranza">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ResumenReporteRespBC.FechaSolicitudMasRecienteDespachoCobranza">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.ConsultaEfectuadaRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaRespBC.FechaConsulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaRespBC.IdentificacionBuro">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaRespBC.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaRespBC.NombreOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaRespBC.TelefonoOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaRespBC.TipoContrato">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaRespBC.ClaveUnidadMonetaria">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaRespBC.ImporteContrato">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaRespBC.IndicadorTipoResponsabilidad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaRespBC.ConsumidorNuevo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaRespBC.ResultadoFinal">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaRespBC.IdentificadorOrigenConsulta">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.CuentasRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FechaActualizacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.RegistroImpugnado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.NombreOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.NumeroTelefonoOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.IdentificadorSociedadInformacionCrediticia">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.NumeroCuentaActual">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.IndicadorTipoResponsabilidad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.TipoCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.TipoContrato">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.ClaveUnidadMonetaria">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.ValorActivoValuacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.NumeroPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FrecuenciaPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.MontoPagar">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FechaAperturaCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FechaUltimoPago">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FechaUltimaCompra">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FechaCierreCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FechaReporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.ModoReportar">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.UltimaFechaSaldoCero">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.Garantia">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.CreditoMaximo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.SaldoActual">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.LimiteCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.SaldoVencido">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.NumeroPagosVencidos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FormaPagoActual">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.HistoricoPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FechaMasRecienteHistoricoPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FechaMasAntiguaHistoricoPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.ClaveObservacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.TotalPagosReportados">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.TotalPagosCalificadosMOP2">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.TotalPagosCalificadosMOP3">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.TotalPagosCalificadosMOP4">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.TotalPagosCalificadosMOP5">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.ImporteSaldoMorosidadHistMasGrave">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FechaHistoricaMorosidadMasGrave">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.MopHistoricoMorosidadMasGrave">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FechaInicioReestructura">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.MontoUltimoPago">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.IdentificadorCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.IdentificadorCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FechaAperturaCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FechaCancelacionCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.HistoricoCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FechaMasRecienteHistoricoCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentasRespBC.FechaMasAntiguaHistoricoCAN">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.PersonaRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.Encabezado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.Nombre">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.Domicilios">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.Empleos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.Cuentas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.ConsultasEfectuadas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.ResumenReporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.HawkAlertConsulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.HawkAlertBD">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.DeclaracionesCliente">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.ScoreBuroCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.Error">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.ReporteImpreso">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.Caracteristicas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.ReportePDF">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaRespBC.FR">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.EncabezadoRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoRespBC.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoRespBC.ClaveRetornoConsumidorPrincipal">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoRespBC.ClaveRetornoConsumidorSecundario">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoRespBC.NumeroControlConsulta">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.EncabezadoBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoBC.Version">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoBC.NumeroReferenciaOperador">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoBC.ProductoRequerido">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoBC.ClavePais">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoBC.IdentificadorBuro">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoBC.ClaveUsuario">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoBC.Password">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoBC.TipoConsulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoBC.TipoContrato">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoBC.ClaveUnidadMonetaria">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoBC.ImporteContrato">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoBC.Idioma">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoBC.TipoSalida">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.NombreRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreRespBC.FechaRecepcionInformacionDependientes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreRespBC.FechaDefuncion">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.NombreBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.ApellidoPaterno">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.ApellidoMaterno">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.ApellidoAdicional">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.PrimerNombre">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.SegundoNombre">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.FechaNacimiento">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.RFC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.Prefijo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.Sufijo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.Nacionalidad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.Residencia">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.NumeroLicenciaConducir">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.EstadoCivil">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.Sexo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.NumeroCedulaProfesional">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.NumeroRegistroElectoral">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.ClaveImpuestosOtroPais">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.ClaveOtroPais">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.NumeroDependientes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreBC.EdadesDependientes">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.DireccionRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.DireccionRespBC.FechaReporteDireccion">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.Direccion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Direccion.Direccion1">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Direccion.Direccion2">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Direccion.ColoniaPoblacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Direccion.DelegacionMunicipio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Direccion.Ciudad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Direccion.Estado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Direccion.CP">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Direccion.FechaResidencia">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Direccion.NumeroTelefono">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Direccion.Extension">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Direccion.Fax">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Direccion.TipoDomicilio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Direccion.IndicadorEspecialDomicilio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Direccion.CodPais">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.EmpleoRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoRespBC.FechaReportoEmpleo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoRespBC.FechaVerificacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoRespBC.ModoVerificacion">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.EmpleoBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.NombreEmpresa">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.Direccion1">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.Direccion2">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.ColoniaPoblacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.DelegacionMunicipio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.Ciudad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.Estado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.CP">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.NumeroTelefono">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.Extension">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.Fax">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.Cargo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.FechaContratacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.ClaveMonedaSalario">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.Salario">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.BaseSalarial">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.NumeroEmpleado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.FechaUltimoDiaEmpleo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoBC.CodPais">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.ErrorRespBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ErrorRespBC.AR">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ErrorRespBC.UR">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.AR">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.AR.ReferenciaOperador">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.AR.SujetoNoAutenticado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.AR.ClaveOPasswordErroneo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.AR.ErrorSistemaBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.AR.EtiquetaSegmentoErronea">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.AR.FaltaCampoRequerido">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.AR.ErrorReporteBloqueado">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.UR">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.UR.NumeroReferenciaOperador">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.UR.SolicitudClienteErronea">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.UR.VersionProporcionadaErronea">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.UR.ProductoSolicitadoErroneo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.UR.PasswordOClaveErronea">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.UR.SegmentoRequeridoNoProporcionado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.UR.UltimaInformacionValidaCliente">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.UR.InformacionErroneaParaConsulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.UR.ValorErroneoCampoRelacionado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.UR.ErrorSistemaBuroCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.UR.EtiquetaSegmentoErronea">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.UR.OrdenErroneoSegmento">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.UR.NumeroErroneoSegmentos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.UR.FaltaCampoRequerido">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.UR.ErrorReporteBloqueado">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.CaracteristicasBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CaracteristicasBC.Plantilla">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CaracteristicasBC.IdCaracteristica">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CaracteristicasBC.NumeroCaracteristica">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CaracteristicasBC.Valor">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CaracteristicasBC.CodigoError">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.ReportePDF">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ReportePDF.Reporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ReportePDF.Error">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.FR">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.FR.LeyendaReporteBloqueado">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.RespuestaBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.RespuestaBC.Personas">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.AutenticacionBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.AutenticacionBC.TipoReporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.AutenticacionBC.TipoSalidaAU">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.AutenticacionBC.ReferenciaOperador">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.AutenticacionBC.TarjetaCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.AutenticacionBC.UltimosCuatroDigitos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.AutenticacionBC.EjercidoCreditoHipotecario">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.AutenticacionBC.EjercidoCreditoAutomotriz">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.CuentaClienteBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaClienteBC.NumeroCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaClienteBC.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaClienteBC.NombreOtorgante">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.PersonaBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaBC.Encabezado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaBC.Nombre">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaBC.Domicilios">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaBC.Empleos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaBC.CuentaC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaBC.Autentica">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaBC.Caracteristicas">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.Caracteristicas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Caracteristicas.Plantilla">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.PersonasBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonasBC.Persona">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.ConsultaBC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaBC.Personas">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.ConsultaEfectuadaResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaResp.FechaConsulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaResp.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaResp.NombreOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaResp.TipoCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaResp.ClaveUnidadMonetaria">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaResp.ImporteCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ConsultaEfectuadaResp.TipoResponsabilidad">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.CuentaResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.FechaActualizacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.RegistroImpugnado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.NombreOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.CuentaActual">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.TipoResponsabilidad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.TipoCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.TipoCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.ClaveUnidadMonetaria">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.ValorActivoValuacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.NumeroPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.FrecuenciaPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.MontoPagar">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.FechaAperturaCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.FechaUltimoPago">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.FechaUltimaCompra">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.FechaCierreCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.FechaReporte">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.UltimaFechaSaldoCero">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.Garantia">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.CreditoMaximo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.SaldoActual">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.LimiteCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.SaldoVencido">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.NumeroPagosVencidos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.PagoActual">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.HistoricoPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.FechaRecienteHistoricoPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.FechaAntiguaHistoricoPagos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.ClavePrevencion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.TotalPagosReportados">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.PeorAtraso">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.FechaPeorAtraso">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.SaldoVencidoPeorAtraso">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.MontoUltimoPago">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.IdentificadorCredito">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.IdentificadorCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.FechaAperturaCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.FechaCancelacionCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.HistoricoCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.FechaMasRecienteHistoricoCAN">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.CuentaResp.FechaMasAntiguaHistoricoCAN">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.MensajeResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.MensajeResp.TipoMensaje">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.MensajeResp.Leyenda">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.EncabezadoResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoResp.Version">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoResp.FolioConsultaOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoResp.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoResp.ExpedienteEncontrado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EncabezadoResp.FolioConsulta">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.PersonaResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaResp.Encabezado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaResp.Nombre">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaResp.Domicilios">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaResp.Empleos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaResp.Mensajes">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaResp.Cuentas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaResp.ConsultasEfectuadas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaResp.DeclaracionesConsumidor">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaResp.Caracteristicas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaResp.ReportePDF">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.PersonaResp.FR">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.NombreResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.NombreResp.FechaDefuncion">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.Nombre">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Nombre.ApellidoPaterno">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Nombre.ApellidoMaterno">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Nombre.ApellidoAdicional">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Nombre.Nombres">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Nombre.FechaNacimiento">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Nombre.RFC">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Nombre.CURP">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Nombre.Nacionalidad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Nombre.Residencia">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Nombre.EstadoCivil">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Nombre.Sexo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Nombre.ClaveElectorIFE">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Nombre.NumeroDependientes">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.DomicilioResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.DomicilioResp.FechaRegistroDomicilio">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.Domicilio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Domicilio.Direccion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Domicilio.ColoniaPoblacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Domicilio.DelegacionMunicipio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Domicilio.Ciudad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Domicilio.Estado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Domicilio.CP">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Domicilio.FechaResidencia">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Domicilio.NumeroTelefono">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Domicilio.TipoDomicilio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Domicilio.TipoAsentamiento">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Domicilio.CodPais">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.EmpleoResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.EmpleoResp.FechaVerificacionEmpleo">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.Empleo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.NombreEmpresa">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.Direccion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.ColoniaPoblacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.DelegacionMunicipio">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.Ciudad">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.Estado">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.CP">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.NumeroTelefono">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.Extension">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.Fax">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.Puesto">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.FechaContratacion">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.ClaveMoneda">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.SalarioMensual">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.FechaUltimoDiaEmpleo">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Empleo.CodPais">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.ErrorResp">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ErrorResp.ClaveOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ErrorResp.FolioConsultaOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ErrorResp.ProductoRequerido">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ErrorResp.Errores">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ErrorResp.AR">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.ErrorResp.UR">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.respuesta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.respuesta.Error">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.respuesta.Personas">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.DetalleConsulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.DetalleConsulta.FolioConsultaOtorgante">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.DetalleConsulta.ProductoRequerido">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.DetalleConsulta.TipoCuenta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.DetalleConsulta.ClaveUnidadMonetaria">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.DetalleConsulta.ImporteContrato">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.DetalleConsulta.NumeroFirma">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.persona">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.persona.DetalleConsulta">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.persona.Nombre">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.persona.Domicilios">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.persona.Empleos">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.persona.CuentasReferencia">
+            <remarks/>
+        </member>
+        <member name="T:ServiceReference1.Personas">
+            <remarks/>
+        </member>
+        <member name="P:ServiceReference1.Personas.Persona">
+            <remarks/>
+        </member>
+        <member name="M:ApiBuro.Controllerspost.ConsultaXmlBcController.Post(ApiBuro.Models.ConsultaBc)">
+            <summary>
+            Consulta Buro de Credito.
+            </summary>
+            <remarks>
+            Este metodo permite Realizar la Consulta de una persona en Buro de Credito .
+            </remarks>
+            <param name="item">Objeto Con los Criterios necesarios para consultar.</param>
+            <response code="200">OK. Devuelve una Busqueda Cumpliendo con los crierios de vigecia de consulta .</response>              
+            <response code="201">OK. Crea un nuevo registro en la base de datos y Consulta Directamente a Buro de Credito.</response>        
+            <response code="203">Error en la Consulta de Buro de Credito y Devuelve el Objeto de Error.</response>        
+        </member>
+    </members>
+</doc>

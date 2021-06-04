@@ -6,7 +6,8 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Nancy.Json;
 //using ServiceReference1;//preproduccion
-using ServiceBuro;
+using ServiceBuro;//Produccion
+using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -16,6 +17,7 @@ using System.Threading.Tasks;
 
 namespace ApiBuro.Controllerspost
 {
+   
     [Route("api/[controller]")]
     [ApiController]
     public class ConsultaXmlBcController : ControllerBase
@@ -37,14 +39,14 @@ namespace ApiBuro.Controllerspost
             EjercidoCreditoHipotecario = ""
 
         };
-
+        [ApiExplorerSettings(IgnoreApi = true)]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CnsBcHawkAlertC>>> GetNombres()
         {
             return await _context.CnsBcHawkAlertC.ToListAsync();
         }
 
-
+        [ApiExplorerSettings(IgnoreApi = true)]
         [HttpGet("{pkNombre}")]
         public async Task<ActionResult<CnsBcNombre>> GetCnsBcNombre(int? pkNombre)
         {
@@ -58,6 +60,17 @@ namespace ApiBuro.Controllerspost
             return cnsBcNombre;
         }
 
+        // Post: api/ConsultaXmlBc
+        /// <summary>
+        /// Consulta Buro de Credito.
+        /// </summary>
+        /// <remarks>
+        /// Este metodo permite Realizar la Consulta de una persona en Buro de Credito .
+        /// </remarks>
+        /// <param name="item">Objeto Con los Criterios necesarios para consultar.</param>
+        /// <response code="200">OK. Devuelve una Busqueda Cumpliendo con los crierios de vigecia de consulta .</response>              
+        /// <response code="201">OK. Crea un nuevo registro en la base de datos y Consulta Directamente a Buro de Credito.</response>        
+        /// <response code="203">Error en la Consulta de Buro de Credito y Devuelve el Objeto de Error.</response>        
         [HttpPost]
         public  ActionResult Post(ConsultaBc item)
         {
@@ -76,19 +89,7 @@ namespace ApiBuro.Controllerspost
                     ClaveUnidadMonetaria = item.ClaveUnidadMonetaria,
                     Idioma = item.Idioma,
                     TipoSalida =item.TipoSalida 
-                //    Version = DatosEncabezado(item.Ambiente).ElementAt(0).Version,
-                //    NumeroReferenciaOperador = DatosEncabezado(item.Ambiente).ElementAt(0).NumeroReferenciaOperador,
-                //    ProductoRequerido = DatosEncabezado(item.Ambiente).ElementAt(0).ProductoRequerido,
-                //    ClavePais = DatosEncabezado(item.Ambiente).ElementAt(0).ClavePais,
-                //    IdentificadorBuro = DatosEncabezado(item.Ambiente).ElementAt(0).IdentificadorBuro,
-                //    ClaveUsuario = DatosEncabezado(item.Ambiente).ElementAt(0).ClaveUsuario,
-                //    Password = DatosEncabezado(item.Ambiente).ElementAt(0).Password,
-                //    TipoConsulta = DatosEncabezado(item.Ambiente).ElementAt(0).Tipoconsulta,
-                //    TipoContrato = DatosEncabezado(item.Ambiente).ElementAt(0).TipoContrato,
-                //    ClaveUnidadMonetaria = DatosEncabezado(item.Ambiente).ElementAt(0).ClaveUnidadMonetaria,
-                //    Idioma = DatosEncabezado(item.Ambiente).ElementAt(0).Idioma,
-                //    TipoSalida = DatosEncabezado(item.Ambiente).ElementAt(0).TipoSalida
-                };
+                      };
                 NombreBC nombreconsulta = new NombreBC
                 {
                     ApellidoPaterno = item.ApellidoPaterno,
@@ -152,13 +153,15 @@ namespace ApiBuro.Controllerspost
 
         }
 
-       // Metodo para consultar al WS Buro 
+        // Metodo para consultar al WS Buro 
+        [ApiExplorerSettings(IgnoreApi = true)]
         public PersonaRespBC[]  resultado(ConsultaBC CBC)
         {  var DatosConsultaBuro = wsbc.consultaXMLAsync(CBC).Result;
             var result = DatosConsultaBuro.@return.Personas;
             return result;
         }
         // Metodo para consultar al WS Buro DevuelveDocumentos
+        [ApiExplorerSettings(IgnoreApi = true)]
         public String DescargaDocumentos(ConsultaBC CBC)
         { var DatosConsultaBuro = wsbc.consultaPDFAsync(CBC).Result;
             if (DatosConsultaBuro == null) 
@@ -171,6 +174,7 @@ namespace ApiBuro.Controllerspost
            
         }
         //Metodo AlmacenarDocumentoReporteBuro
+        [ApiExplorerSettings(IgnoreApi = true)]
         public void SaveImage(byte[] DocumentoConsulta,String NombreTitularConsulta) 
         {
             if (DocumentoConsulta != null)
@@ -187,6 +191,7 @@ namespace ApiBuro.Controllerspost
             }
             
         }
+        [ApiExplorerSettings(IgnoreApi = true)]
         //Metodo que me devuelve una lista con un Codigo de respuesta que se guardo la consulta en la bd
         public  List<CodigoRespuestaBD> guardarenlabd(PersonaRespBC[] result,String doc)
         {
@@ -199,7 +204,9 @@ namespace ApiBuro.Controllerspost
             return datos;
         }
 
+
         //Metodo de busqueda de Reporte si existe o no existe
+        [ApiExplorerSettings(IgnoreApi = true)]
         public List<BuscarBCRFC> ConsultaBD(String RFC)
         { var rfc = new SqlParameter("@rfc", RFC);
             var DatosBusqueda = _context.BuscarBCRFC.FromSqlRaw<BuscarBCRFC>("EXEC [dbo].[BuscarCB] @rfc", rfc).ToList();
@@ -207,6 +214,7 @@ namespace ApiBuro.Controllerspost
         }
         //Lista de Informacion:
         //Retorna Listas Filtradas por el Numero de Control de la consulta
+        [ApiExplorerSettings(IgnoreApi = true)]
         public List<CuentaSP> resultadoCuenta(String numeroControlConsulta)
         {
             var DatoFiltro = new SqlParameter("@numeroControlConsulta", numeroControlConsulta);
@@ -214,6 +222,7 @@ namespace ApiBuro.Controllerspost
             _context.SaveChanges();
             return DataInfo;
         }
+        [ApiExplorerSettings(IgnoreApi = true)]
         public List<CnsBcNombre>resultadoNombre(String numeroControlConsulta)
         {
             //var DataInfo = _context.CnsBcNombre.FromSqlRaw<CnsBcNombre>("select * from cnsBC_Nombre where NumeroControlConsulta='" + numeroControlConsulta + "'").ToList();
@@ -223,19 +232,21 @@ namespace ApiBuro.Controllerspost
             _context.SaveChanges();
             return DataInfo;
         }
+        [ApiExplorerSettings(IgnoreApi = true)]
         public List<CnsBcResumenReporte> resultadoResumenReporte(String numeroControlConsulta)
         {
             var DataInfo = _context.CnsBcResumenReporte.FromSqlRaw<CnsBcResumenReporte>("select * from cnsBC_ResumenReporte where NumeroControlConsulta='" + numeroControlConsulta + "'").ToList();
             _context.SaveChanges();
             return DataInfo;
         }
+        [ApiExplorerSettings(IgnoreApi = true)]
         public List<CnsBcScoreBc> resultadoScoreBc(String numeroControlConsulta)
         {
             var DataInfo = _context.CnsBcScoreBc.FromSqlRaw<CnsBcScoreBc>("select * from cnsBC_ScoreBC where NumeroControlConsulta='" + numeroControlConsulta + "'").ToList();
             _context.SaveChanges();
             return DataInfo;
         }
-
+        [ApiExplorerSettings(IgnoreApi = true)]
         public List<CnsBcEncabezado> resultadoEncabezado(String numeroControlConsulta) 
         {
             var DataInfo = _context.CnsBcEncabezado.FromSqlRaw<CnsBcEncabezado>("select * from cnsBC_Encabezado where NumeroControlConsulta='" + numeroControlConsulta + "'").ToList();
@@ -251,6 +262,7 @@ namespace ApiBuro.Controllerspost
         //    return BuscarCredenciales;
         //}
 
+        [ApiExplorerSettings(IgnoreApi = true)]
         //Metodo que regresa la informacion
         public object TraerBusqueda(String numeroControlConsulta,Boolean Nombres, Boolean Cuentas, Boolean Score, Boolean ResumenReporte)
         {
